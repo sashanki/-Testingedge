@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20201130 12:47:38.021" generator="Robot 3.2.2 (Python 2.7.16 on win32)">
+<suite source="C:\Users\sashank.i\Downloads\FlatworldEdge" id="s1" name="FlatworldEdge">
+<suite source="C:\Users\sashank.i\Downloads\FlatworldEdge\FlatworldEdge" id="s1-s1" name="FlatworldEdge">
+<suite source="C:\Users\sashank.i\Downloads\FlatworldEdge\FlatworldEdge\Tests" id="s1-s1-s1" name="Tests">
+<suite source="C:\Users\sashank.i\Downloads\FlatworldEdge\FlatworldEdge\Tests\HomePage.robot" id="s1-s1-s1-s1" name="HomePage">
+<test id="s1-s1-s1-s1-t1" name="Verify the Home Page Elements">
+<kw name="Goto Edge Application" library="LandingPage">
+<kw name="Begin Web Test" library="BaseSetup">
+<kw name="Open Browser" library="ExtendedSelenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL.${ENV}}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20201130 12:47:38.421" level="INFO">Opening browser 'chrome' to base url 'https://www.flatworldedge.com'</msg>
+<status status="PASS" endtime="20201130 12:47:46.896" starttime="20201130 12:47:38.420"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="ExtendedSelenium2Library">
+<doc>Sets current browser's implicit wait in seconds.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" endtime="20201130 12:47:46.901" starttime="20201130 12:47:46.897"></status>
+</kw>
+<kw name="Maximize Browser Window" library="ExtendedSelenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20201130 12:47:49.041" starttime="20201130 12:47:46.903"></status>
+</kw>
+<status status="PASS" endtime="20201130 12:47:49.042" starttime="20201130 12:47:38.420"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="ExtendedSelenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//a[text()='Home']</arg>
+</arguments>
+<status status="PASS" endtime="20201130 12:47:49.094" starttime="20201130 12:47:49.042"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20201130 12:47:54.097" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20201130 12:47:54.097" starttime="20201130 12:47:49.095"></status>
+</kw>
+<kw name="Log Many" library="BuiltIn">
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<arguments>
+<arg>Successfully launched landing page for</arg>
+<arg>${ENV}</arg>
+<arg>environment.</arg>
+</arguments>
+<msg timestamp="20201130 12:47:54.099" level="INFO">Successfully launched landing page for</msg>
+<msg timestamp="20201130 12:47:54.100" level="INFO">QA</msg>
+<msg timestamp="20201130 12:47:54.100" level="INFO">environment.</msg>
+<status status="PASS" endtime="20201130 12:47:54.100" starttime="20201130 12:47:54.098"></status>
+</kw>
+<status status="PASS" endtime="20201130 12:47:54.101" starttime="20201130 12:47:38.419"></status>
+</kw>
+<kw name="UI Elements on Home Page" library="HomePage">
+<doc>Veryfying the UI Elements</doc>
+<kw name="Element Should Be Visible" library="ExtendedSelenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>${lblHome}</arg>
+</arguments>
+<msg timestamp="20201130 12:47:54.103" level="INFO">Verifying element 'xpath=//a[text()='Home']' is visible.</msg>
+<status status="PASS" endtime="20201130 12:47:54.139" starttime="20201130 12:47:54.102"></status>
+</kw>
+<status status="PASS" endtime="20201130 12:47:54.141" starttime="20201130 12:47:54.102"></status>
+</kw>
+<doc>@Author: Shakunthala || HomePage || 2020 OND</doc>
+<tags>
+<tag>UIElements</tag>
+</tags>
+<status status="PASS" endtime="20201130 12:47:54.142" critical="yes" starttime="20201130 12:47:38.418"></status>
+</test>
+<status status="PASS" endtime="20201130 12:47:54.144" starttime="20201130 12:47:38.082"></status>
+</suite>
+<status status="PASS" endtime="20201130 12:47:54.148" starttime="20201130 12:47:38.080"></status>
+</suite>
+<status status="PASS" endtime="20201130 12:47:54.151" starttime="20201130 12:47:38.076"></status>
+</suite>
+<status status="PASS" endtime="20201130 12:47:54.154" starttime="20201130 12:47:38.055"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">UIElements</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="FlatworldEdge" pass="1">FlatworldEdge</stat>
+<stat fail="0" id="s1-s1" name="FlatworldEdge" pass="1">FlatworldEdge.FlatworldEdge</stat>
+<stat fail="0" id="s1-s1-s1" name="Tests" pass="1">FlatworldEdge.FlatworldEdge.Tests</stat>
+<stat fail="0" id="s1-s1-s1-s1" name="HomePage" pass="1">FlatworldEdge.FlatworldEdge.Tests.HomePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
